@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Button } from './components/button'
+import { Avalia } from './components/avalia'
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +24,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Button />
         {children}
+        <Avalia />
       </body>
     </html>
   );
