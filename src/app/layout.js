@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Button />
         {children}
+        <Avalia />
       </body>
     </html>
   );
